@@ -95,11 +95,6 @@ public class PlayerController : MonoBehaviour
             player.entity.target = collider.transform.gameObject;
         }
 
-        if (collider.tag == "Teleport")
-        {
-            tmpRegion = collider.GetComponent<Teleport>().region;
-            canTeleport = true;
-        }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -109,11 +104,6 @@ public class PlayerController : MonoBehaviour
             player.entity.target = null;
         }
 
-        if (collider.tag == "Teleport")
-        {
-            tmpRegion = null;
-            canTeleport = false;
-        }
     }
 
     void Attack()
