@@ -114,11 +114,6 @@ public class PlayerController : MonoBehaviour
         Monster monster = player.entity.target.GetComponent<Monster>();
 
 
-        if (monster.entity.dead)
-        {
-            player.entity.target = null;
-        }
-
         float distance = Vector2.Distance(transform.position, player.entity.target.transform.position);
 
         if (distance <= player.entity.attackDistance)

@@ -49674,6 +49674,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464257239}
   m_CullTransparentMesh: 1
+--- !u!1 &1469859656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7492671814184229326, guid: c2242808f9b91814794e95ea6ae6a2a4, type: 3}
+  m_PrefabInstance: {fileID: 4039695584224219409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1495667918
 GameObject:
   m_ObjectHideFlags: 0
@@ -51413,6 +51418,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4441436687230940419, guid: c2242808f9b91814794e95ea6ae6a2a4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.256
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441436687230940419, guid: c2242808f9b91814794e95ea6ae6a2a4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533011499488921552, guid: c2242808f9b91814794e95ea6ae6a2a4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.43300718
+      objectReference: {fileID: 0}
     - target: {fileID: 5924789324205564486, guid: c2242808f9b91814794e95ea6ae6a2a4, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -51543,6 +51560,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1763038221}
     - target: {fileID: 4481713300218081500, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
+      propertyPath: entity.target
+      value: 
+      objectReference: {fileID: 1469859656}
+    - target: {fileID: 4481713300218081500, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
       propertyPath: intNegativeBtn
       value: 
       objectReference: {fileID: 275370000}
@@ -51596,11 +51617,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5503366000697654197, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.19
+      value: 8.682
       objectReference: {fileID: 0}
     - target: {fileID: 5503366000697654197, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.17
+      value: 5.97
       objectReference: {fileID: 0}
     - target: {fileID: 5503366000697654197, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
       propertyPath: m_LocalPosition.z

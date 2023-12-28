@@ -226,20 +226,9 @@ public class Monster : MonoBehaviour
         player.GainExp(rewardExperience);
 
         Debug.Log("O inimigo morreu: " + entity.name);
-
+        
         StopAllCoroutines();
-        StartCoroutine(Respawn());
-    }
-
-    IEnumerator Respawn()
-    {
-        yield return new WaitForSeconds(respawnTime);
-
-        GameObject newMonster = Instantiate(prefab, transform.position, transform.rotation, null);
-        newMonster.name = prefab.name;
-        newMonster.GetComponent<Monster>().entity.dead = false;
-        newMonster.GetComponent<Monster>().entity.combatCoroutine = false;
-
         Destroy(this.gameObject);
     }
+
 }
