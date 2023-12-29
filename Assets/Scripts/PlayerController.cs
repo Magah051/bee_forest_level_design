@@ -14,9 +14,6 @@ public class PlayerController : MonoBehaviour
     float input_x = 0;
     float input_y = 0;
     bool isWalking = false;
-    int honey = 0;
-
-    public Text honeyUI;
 
 
     Rigidbody2D rb2D;
@@ -52,7 +49,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        honeyUI.text = honey.ToString();
         input_x = Input.GetAxisRaw("Horizontal");
         input_y = Input.GetAxisRaw("Vertical");
         isWalking = (input_x != 0 || input_y != 0);
@@ -109,16 +105,6 @@ public class PlayerController : MonoBehaviour
         if (collider.transform.tag == "Enemy")
         {
             player.entity.target = null;
-        }
-
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Honey"))
-        {
-            honey++;
-            Debug.Log(honey);
         }
 
     }

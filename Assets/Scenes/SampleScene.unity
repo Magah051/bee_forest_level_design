@@ -56884,7 +56884,7 @@ GameObject:
   - component: {fileID: 931702948}
   - component: {fileID: 931702947}
   m_Layer: 5
-  m_Name: HoneyText12
+  m_Name: HoneyText2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61479,6 +61479,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 370358476891279339, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
+      propertyPath: honeyUI
+      value: 
+      objectReference: {fileID: 556231555}
     - target: {fileID: 2314936708819615203, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -61519,6 +61523,10 @@ PrefabInstance:
       propertyPath: expText
       value: 
       objectReference: {fileID: 17988167}
+    - target: {fileID: 4481713300218081500, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
+      propertyPath: honeyUI
+      value: 
+      objectReference: {fileID: 556231555}
     - target: {fileID: 4481713300218081500, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
       propertyPath: manager
       value: 

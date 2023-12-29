@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
     public Button intNegativeBtn;
     public Button wilNegativeBtn;
     public Text pointsTxt;
+    public Text honeyUI;
 
     [Header("Exp")]
     public int currentExp;
@@ -54,6 +55,8 @@ public class Player : MonoBehaviour
     public GameObject levelUpFx;
     public AudioClip levelUpSound;
     public int givePoints = 5;
+    int honey = 0;
+    
 
     [Header("Respawn")]
     public float respawnTime = 5;
@@ -122,6 +125,7 @@ public class Player : MonoBehaviour
         exp.maxValue = expLeft;
         expText.text = String.Format("Exp: {0}/{1}", currentExp, expLeft);
         levelText.text = entity.level.ToString();
+        honeyUI.text = honey.ToString();
     }
 
     IEnumerator RegenHealth()
@@ -277,5 +281,16 @@ public class Player : MonoBehaviour
             UpdatePoints();
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Honey"))
+        {
+            honey++;
+            Debug.Log(honey);
+        }
+
+    }
+
 
 }
