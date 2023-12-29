@@ -227,6 +227,7 @@ public class Player : MonoBehaviour
         intTxt.text = entity.intelligence.ToString();
         wilTxt.text = entity.willpower.ToString();
         pointsTxt.text = entity.points.ToString();
+ 
     }
 
     public void SetupUIButtons()
