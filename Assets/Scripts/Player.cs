@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -183,7 +184,7 @@ public class Player : MonoBehaviour
         entity.target = null;
 
         StopAllCoroutines();
-        StartCoroutine(Respawn());
+        SceneManager.LoadScene(1);
     }
 
     IEnumerator Respawn()

@@ -492,8 +492,8 @@ GameObject:
   - component: {fileID: 5325164030165648100}
   - component: {fileID: 2021207018505546409}
   - component: {fileID: 5442667614066503919}
-  - component: {fileID: 3330943289438474085}
   - component: {fileID: 71512885404136012}
+  - component: {fileID: 3330943289438474085}
   - component: {fileID: 1080627053917945459}
   m_Layer: 0
   m_Name: Bee
@@ -516,7 +516,7 @@ Transform:
   m_Children:
   - {fileID: 4441436687230940419}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5325164030165648100
 SpriteRenderer:
@@ -636,33 +636,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.31757212, y: 0.4502506}
   m_EdgeRadius: 0
---- !u!50 &3330943289438474085
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7492671814184229326}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!70 &71512885404136012
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -698,6 +671,33 @@ CapsuleCollider2D:
   m_Offset: {x: -0.025423616, y: -0.034229085}
   m_Size: {x: 0.71296245, y: 0.91232425}
   m_Direction: 0
+--- !u!50 &3330943289438474085
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7492671814184229326}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!114 &1080627053917945459
 MonoBehaviour:
   m_ObjectHideFlags: 0
