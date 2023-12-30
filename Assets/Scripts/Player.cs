@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
     public GameObject levelUpFx;
     public AudioClip levelUpSound;
     public int givePoints = 5;
-    int honey = 0;
+    public int honey = 0;
     
 
     [Header("Respawn")]
@@ -291,6 +291,5 @@ public class Player : MonoBehaviour
         }
 
     }
-
 
 }
