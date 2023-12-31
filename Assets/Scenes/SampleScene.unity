@@ -89271,7 +89271,7 @@ PrefabInstance:
       objectReference: {fileID: 2092373003}
     - target: {fileID: 4481713300218081500, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
       propertyPath: honey
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4481713300218081500, guid: f743ce3b5e37d984d870dd2679a8e2fb, type: 3}
       propertyPath: health

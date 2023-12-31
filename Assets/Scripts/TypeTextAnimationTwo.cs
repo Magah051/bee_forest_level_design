@@ -8,7 +8,7 @@ public class TypeTextAnimationTwo : MonoBehaviour
 
     public float typeDelay = 0.05f;
     public TextMeshProUGUI textObject;
-    string fullText = "Muito bem! Você conseguiu os sete favos de mel. Pode passar!";
+    string fullText = "Very good! You got the seven honeycombs. You can pass!";
 
     void Start()
     {
