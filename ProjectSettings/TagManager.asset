@@ -8,6 +8,7 @@ TagManager:
   - Waypoint
   - Teleport
   - Honey
+  - End
   layers:
   - Default
   - TransparentFX
@@ -50,6 +51,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1330229503
+    locked: 0
+  - name: TreeTop
+    uniqueID: 1586844511
     locked: 0
   - name: Pet
     uniqueID: 2989280257

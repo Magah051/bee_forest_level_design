@@ -6,6 +6,11 @@ public class Bear : MonoBehaviour
 {
     public Animator animBear;
     private float velocidadeUrso = 2f;
+    public GameObject uIBearNoPass;
+    public GameObject uIBearPass;
+    public float displayTime = 4f;
+
+    private bool triggered = false;
     void OnCollisionEnter2D(Collision2D collision)
     {
         int honeyValue = collision.gameObject.GetComponent<Player>().honey;
@@ -14,13 +19,17 @@ public class Bear : MonoBehaviour
         {
             animBear.SetBool("isAwake", true);
             Invoke("IniciarMovimento", 3f);
-            Debug.Log("Pode passar");
+            GameObject uIBearInstance = Instantiate(uIBearPass, transform.position, Quaternion.identity);
+            Destroy(uIBearInstance, displayTime);
+            triggered = true;
         }
         else
         {
             animBear.SetBool("isAwake", true);
-            StartCoroutine(DesativarAnimacaoAposTempo(6f));
-            Debug.Log("Tenho fome");
+            StartCoroutine(DesativarAnimacaoAposTempo(4f));
+            GameObject uIBearInstance = Instantiate(uIBearNoPass, transform.position, Quaternion.identity);
+            Destroy(uIBearInstance, displayTime);
+            triggered = true;
         }
     }
     private void IniciarMovimento()

@@ -288,7 +288,12 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Honey"))
         {
             honey++;
-            Debug.Log(honey);
+        }
+
+        if (collision.CompareTag("End"))
+        {
+            SceneManager.LoadScene(2);
+            Debug.Log("Colidiu...");
         }
 
     }

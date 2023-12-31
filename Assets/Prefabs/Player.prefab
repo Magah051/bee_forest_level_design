@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1330229503
   m_SortingLayer: 2
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1238046341, guid: 7381bef74f905f74fb7607b7468c8b96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_FlipX: 0
@@ -145,7 +145,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.24}
+  m_Offset: {x: 0.012169838, y: 0.0155774355}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -156,7 +156,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.86, y: 1.46}
+  m_Size: {x: 0.5435715, y: 0.94884515}
   m_EdgeRadius: 0
 --- !u!50 &8691805258269331388
 Rigidbody2D:
@@ -265,6 +265,7 @@ MonoBehaviour:
   intNegativeBtn: {fileID: 0}
   wilNegativeBtn: {fileID: 0}
   pointsTxt: {fileID: 0}
+  honeyUI: {fileID: 0}
   currentExp: 0
   expBase: 150
   expLeft: 150
@@ -272,6 +273,7 @@ MonoBehaviour:
   levelUpFx: {fileID: 1979833469622629280, guid: 4832ef57b2992e94b9f3b7897af74dd5, type: 3}
   levelUpSound: {fileID: 8300000, guid: 01864694601a81e4faa6844fc99f415b, type: 3}
   givePoints: 5
+  honey: 7
   respawnTime: 2
   prefab: {fileID: 5222890934829669395}
 --- !u!70 &2314936708819615203
@@ -281,7 +283,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5222890934829669395}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -607,7 +609,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 21cb572ae4a222e42bbe52b3ac6ca2c9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.251
+  m_Volume: 0.145
   m_Pitch: 1
   Loop: 0
   Mute: 0
