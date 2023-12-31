@@ -8,6 +8,7 @@ public class Bear : MonoBehaviour
     private float velocidadeUrso = 2f;
     public GameObject uIBearNoPass;
     public GameObject uIBearPass;
+    public GameObject HoneyUI;
     public float displayTime = 4f;
 
     private bool triggered = false;
@@ -21,6 +22,7 @@ public class Bear : MonoBehaviour
             Invoke("IniciarMovimento", 3f);
             GameObject uIBearInstance = Instantiate(uIBearPass, transform.position, Quaternion.identity);
             Destroy(uIBearInstance, displayTime);
+            Destroy(HoneyUI);
             triggered = true;
         }
         else

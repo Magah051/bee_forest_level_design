@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
     public Button wilNegativeBtn;
     public Text pointsTxt;
     public Text honeyUI;
+    
 
     [Header("Exp")]
     public int currentExp;
@@ -293,7 +294,6 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("End"))
         {
             SceneManager.LoadScene(2);
-            Debug.Log("Colidiu...");
         }
 
     }
